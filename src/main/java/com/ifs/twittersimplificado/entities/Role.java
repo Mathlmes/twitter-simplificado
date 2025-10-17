@@ -29,6 +29,8 @@ public class Role {
     public void setName(String name) {
         this.name = name;
     }
+
+   
     public enum values{
 
         BASIC(1L),

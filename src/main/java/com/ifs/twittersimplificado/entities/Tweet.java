@@ -11,9 +11,11 @@ import java.time.Instant;
 public class Tweet {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long tweetId;
 
+    @ManyToOne
+    @JoinColumn(name = "user_user_id")
     private User user;
 
     private String content;

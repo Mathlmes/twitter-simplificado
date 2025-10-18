@@ -9,6 +9,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 public class Role {
 
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -29,7 +29,8 @@ public class CreateTweetController {
         this.userRepository = userRepository;
     }
 
-    @PostMapping("/tweets")
+    @PostMapping("/tweets")//post mapping para criar tweet
+    //testando ssh
     public ResponseEntity<Void> createTweet(@RequestBody CreateTweetDTO dto,
                                             JwtAuthenticationToken token) {
 
